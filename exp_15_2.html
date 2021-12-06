@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示列表项的内容</title>
+    <script type="text/javascript">
+        function displayItem(data) {
+            alert("教材名称："+data.id+"\n定价："+data.value+"元");
+        }
+    </script>
+    <style>
+        select{
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h3>显示列表项内容</h3>
+    <form>
+        <label>
+            <select size="5">
+                <option id="计算机组成原理" value="35" onclick="displayItem(this)">计算机组成原理</option>
+                <option id="数据结构" value="38" onclick="displayItem(this)">数据结构</option>
+                <option id="计算机网络" value="43" onclick="displayItem(this)">计算机网络</option>
+                <option id="Java程序设计" value="40" onclick="displayItem(this)">Java程序设计</option>
+                <option id="算法分析" value="28" onclick="displayItem(this)">算法分析</option>
+            </select>
+        </label>
+    </form>
+</body>
+</html>

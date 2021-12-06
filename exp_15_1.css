@@ -1,0 +1,36 @@
+form{
+    background-color: #663399;
+    width: 300px;
+}
+legend{
+    text-align: left;
+    font-size: 20px;
+}
+fieldset{
+    color: white;
+}
+.login_1{
+    margin: 20px;
+}
+.login_2{
+    margin: 10px 10px 20px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+#submit{
+    margin-top: 20px;
+}
+#reset{
+    margin-top: 20px;
+    margin-left: 3px;
+}
+input[type=text]{
+    margin-left: 5px;
+}
+input[type=password]{
+    margin-left: 5px;
+    width: 150px;
+}

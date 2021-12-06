@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单处理</title>
+    <script type="text/javascript">
+        function isValue() {
+            let acc=document.getElementById("account").value;
+            let pwd=document.getElementById("password").value;
+            if(acc==="" || pwd===""){
+                alert("用户名或密码不能为空");
+            }else {
+                if(acc.length>20 || acc.length<8){
+                    alert("用户名长度在8-20个字符之间");
+                }
+                else if(pwd.length>20 || pwd.length<8){
+                    alert("密码长度在8-20个字符之间");
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="exp_15_1.css">
+</head>
+<body style="text-align: center">
+    <form onsubmit="isValue()">
+        <fieldset>
+            <legend>用户登录</legend>
+            <div class="login_1">
+                用户名<input type="text" id="account">
+            </div>
+            <div class="login_2">
+                密&nbsp;&nbsp;码<input type="password" id="password">
+            </div>
+            <div class="submit">
+                <input type="submit" id="submit">
+                <input type="reset" id="reset">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
